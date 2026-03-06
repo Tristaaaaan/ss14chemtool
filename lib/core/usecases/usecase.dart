@@ -13,29 +13,12 @@ class NoParams extends Equatable {
   List<Object?> get props => [];
 }
 
-class GetCheckOutsParams extends Equatable {
-  final int offset;
-  final String? searchQuery;
-  final bool? active;
-  final bool? finished;
+class GetRecipeParams extends Equatable {
+  final double unit;
+  final String reagentId;
 
-  const GetCheckOutsParams({
-    required this.offset,
-    this.searchQuery,
-    this.active,
-    this.finished,
-  });
+  const GetRecipeParams({required this.unit, required this.reagentId});
 
   @override
-  List<Object?> get props => [offset, searchQuery, active, finished];
-}
-
-class GetNotificationParams extends Equatable {
-  final int offset;
-  final String? searchQuery;
-
-  const GetNotificationParams({required this.offset, this.searchQuery});
-
-  @override
-  List<Object?> get props => [offset, searchQuery];
+  List<Object?> get props => [unit, reagentId];
 }
