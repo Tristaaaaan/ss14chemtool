@@ -7,8 +7,9 @@ import 'package:mockito/mockito.dart' as _i1;
 import 'package:mockito/src/dummies.dart' as _i6;
 import 'package:ss14chemtool/core/error/fp.dart' as _i3;
 import 'package:ss14chemtool/core/usecases/usecase.dart' as _i5;
-import 'package:ss14chemtool/features/home/domain/entities/recipe.dart' as _i4;
-import 'package:ss14chemtool/features/home/domain/repositories/recipe_repository.dart'
+import 'package:ss14chemtool/features/recipe/domain/entities/recipe.dart'
+    as _i4;
+import 'package:ss14chemtool/features/recipe/domain/repositories/recipe_repository.dart'
     as _i2;
 
 // ignore_for_file: type=lint

@@ -4,11 +4,11 @@ import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:ss14chemtool/core/error/failure.dart';
 import 'package:ss14chemtool/core/usecases/usecase.dart';
-import 'package:ss14chemtool/features/home/domain/entities/ingredient.dart';
-import 'package:ss14chemtool/features/home/domain/entities/recipe.dart';
-import 'package:ss14chemtool/features/home/domain/entities/result.dart';
-import 'package:ss14chemtool/features/home/domain/repositories/recipe_repository.dart';
-import 'package:ss14chemtool/features/home/domain/usecases/get_recipe.dart';
+import 'package:ss14chemtool/features/recipe/domain/entities/ingredient.dart';
+import 'package:ss14chemtool/features/recipe/domain/entities/recipe.dart';
+import 'package:ss14chemtool/features/recipe/domain/entities/result.dart';
+import 'package:ss14chemtool/features/recipe/domain/repositories/recipe_repository.dart';
+import 'package:ss14chemtool/features/recipe/domain/usecases/get_recipe.dart';
 
 import '../../../../helpers/mockito_fallbacks.dart';
 @GenerateNiceMocks([MockSpec<RecipeRepository>()])

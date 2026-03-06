@@ -1,8 +1,8 @@
 import 'package:mockito/mockito.dart';
 import 'package:ss14chemtool/core/error/fp.dart';
-import 'package:ss14chemtool/features/home/domain/entities/ingredient.dart';
-import 'package:ss14chemtool/features/home/domain/entities/recipe.dart';
-import 'package:ss14chemtool/features/home/domain/entities/result.dart';
+import 'package:ss14chemtool/features/recipe/domain/entities/ingredient.dart';
+import 'package:ss14chemtool/features/recipe/domain/entities/recipe.dart';
+import 'package:ss14chemtool/features/recipe/domain/entities/result.dart';
 
 void registerMockitoFallbacks() {
   provideDummy<TaskEither<Failure, Unit>>(TaskEither.right(unit));

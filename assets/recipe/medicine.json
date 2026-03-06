@@ -1,0 +1,28 @@
+{
+  "id": "inaprovaline",
+  "name": "Inaprovaline",
+  "description": "Inaprovaline is a synaptic stimulant and cardiostimulant, commonly used to treat asphyxiation damage caused during critical states and reduce bleeding. Used in many advanced medicines.",
+  "recipe": {
+    "method": "mix",
+    "ingredients": [
+      {
+        "id": "oxygen",
+        "amount": 1
+      },
+      {
+        "id": "carbon",
+        "amount": 1
+      },
+      {
+        "id": "sugar",
+        "amount": 1
+      }
+    ],
+    "results": [
+      {
+        "id": "inaprovaline",
+        "amount": 3
+      }
+    ]
+  }
+}

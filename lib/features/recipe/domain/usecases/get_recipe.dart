@@ -1,8 +1,7 @@
-import 'package:ss14chemtool/core/error/fp.dart';
-import 'package:ss14chemtool/features/home/domain/entities/recipe.dart';
-import 'package:ss14chemtool/features/home/domain/repositories/recipe_repository.dart';
-
+import '../../../../core/error/fp.dart';
 import '../../../../core/usecases/usecase.dart';
+import '../entities/recipe.dart';
+import '../repositories/recipe_repository.dart';
 
 class GetRecipe implements UseCase<RecipeEntity, GetRecipeParams> {
   final RecipeRepository recipeRepository;

@@ -1,5 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:ss14chemtool/features/home/domain/entities/recipe.dart';
+
+import 'recipe.dart';
 
 class ReagentEntity extends Equatable {
   final String id;
