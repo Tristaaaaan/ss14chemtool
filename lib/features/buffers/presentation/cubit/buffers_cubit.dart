@@ -1,7 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ss14chemtool/features/buffers/domain/usecases/get_buffers.dart';
 
 import '../../../../core/usecases/usecase.dart';
+import '../../domain/usecases/get_buffers.dart';
 import 'buffers_state.dart';
 
 class BuffersCubit extends Cubit<BuffersState> {

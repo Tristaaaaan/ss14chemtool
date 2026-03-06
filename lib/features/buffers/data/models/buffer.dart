@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:ss14chemtool/features/buffers/domain/entities/buffer.dart';
+
+import '../../domain/entities/buffer.dart';
 
 part 'buffer.freezed.dart';
 part 'buffer.g.dart';

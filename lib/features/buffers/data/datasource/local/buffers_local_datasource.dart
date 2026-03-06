@@ -2,7 +2,8 @@ import 'dart:convert';
 import 'dart:developer' as developer show log;
 
 import 'package:flutter/services.dart';
-import 'package:ss14chemtool/features/buffers/data/models/buffer.dart';
+
+import '../../models/buffer.dart';
 
 abstract class BuffersLocalDatasource {
   Future<List<Buffer>> getBuffers();
