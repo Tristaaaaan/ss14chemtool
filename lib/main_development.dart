@@ -1,5 +1,3 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ss14chemtool/features/buffers/data/datasource/local/buffers_local_datasource.dart';
@@ -21,15 +19,15 @@ void main() async {
 
   // Must add this line.
   await windowManager.ensureInitialized();
-  if (Platform.isMacOS) {
-    WindowOptions windowOptions = WindowOptions(
-      size: Size(1920, 1080),
-      center: true,
-      // backgroundColor: Colors.transparent,
-      // skipTaskbar: false,
-      // titleBarStyle: TitleBarStyle.values[0],
-    );
-  }
+  // if (Platform.isMacOS) {
+  //   WindowOptions windowOptions = WindowOptions(
+  //     size: Size(1920, 1080),
+  //     center: true,
+  //     // backgroundColor: Colors.transparent,
+  //     // skipTaskbar: false,
+  //     // titleBarStyle: TitleBarStyle.values[0],
+  //   );
+  // }
 
   runApp(
     MultiBlocProvider(
