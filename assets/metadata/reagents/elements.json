@@ -1,0 +1,90 @@
+[
+  {
+    "name": "aluminium",
+    "description": "A silver, soft, non-magnetic, and ductile metal."
+  },
+  {
+    "name": "ash",
+    "description": "A light grey powdery residue"
+  },
+  {
+    "name": "carbon",
+    "description": "A black, crystalline solid."
+  },
+  {
+    "name": "charcoal",
+    "description": "A black, porous solid"
+  },
+  {
+    "name": "chlorine",
+    "description": "A yellow-green gas which is toxic to humans."
+  },
+  {
+    "name": "copper",
+    "description": "A soft, malleable, and ductile metal with very high thermal and electrical conductivity."
+  },
+  {
+    "name": "fluorine",
+    "description": "A highly toxic pale yellow gas. Extremely reactive."
+  },
+  {
+    "name": "gold",
+    "description": "Gold is a dense, soft, shiny metal and the most malleable and ductile metal known."
+  },
+  {
+    "name": "hydrogen",
+    "description": "A light, flammable gas."
+  },
+  {
+    "name": "iodine",
+    "description": "Commonly added to table salt as a nutrient. On its own it tastes far less pleasing."
+  },
+  {
+    "name": "iron",
+    "description": "A silvery-grey metal which forms iron oxides (rust) with contact with air. Commonly alloyed with other elements to create alloys such as steel."
+  },
+  {
+    "name": "lithium",
+    "description": "A soft, silvery-white alkali metal. It's highly reactive, and ignites if it makes contact with water."
+  },
+  {
+    "name": "mercury",
+    "description": "A silver metal which is liquid at room temperature. It's highly toxic to humans."
+  },
+  {
+    "name": "potassium",
+    "description": "A soft, shiny grey metal. Even more reactive than lithium."
+  },
+  {
+    "name": "phosphorus",
+    "description": "A reactive metal used in pyrotechnics and weapons."
+  },
+  {
+    "name": "radium",
+    "description": "A radioactive metal, silvery-white in its pure form. It glows due to its radioactivity and is highly toxic."
+  },
+  {
+    "name": "silicon",
+    "description": "A hard and brittle crystalline solid with a blue-grey color."
+  },
+  {
+    "name": "silver",
+    "description": "A soft, white, lustrous transition metal, it has the highest electrical conductivity of any element and the highest thermal conductivity of any metal."
+  },
+  {
+    "name": "sulfur",
+    "description": "A yellow, crystalline solid."
+  },
+  {
+    "name": "sodium",
+    "description": "A silvery-white alkali metal. Highly reactive in its pure form."
+  },
+  {
+    "name": "uranium",
+    "description": "A grey metallic chemical element in the actinide series, weakly radioactive."
+  },
+  {
+    "name": "zinc",
+    "description": "A silvery, brittle metal, often used in batteries to carry charge."
+  }
+]
