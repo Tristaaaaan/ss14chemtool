@@ -1,5 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
-import 'package:fpdart/fpdart.dart' as TaskEither;
+import 'package:fpdart/fpdart.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:ss14chemtool/core/error/failure.dart';
@@ -37,9 +37,9 @@ void main() {
 
   test('should get recipe from the repository', () async {
     // arrange
-    when(mockRecipeRepository.getRecipe(params)).thenAnswer(
-      (_) => TaskEither.TaskEither<Failure, RecipeEntity>.right(recipe),
-    );
+    when(
+      mockRecipeRepository.getRecipe(params),
+    ).thenAnswer((_) => TaskEither<Failure, RecipeEntity>.right(recipe));
 
     // act
     final either = await usecase(params).run();
