@@ -7,8 +7,8 @@ class ThemeCubit extends Cubit<bool> {
   static final ThemeData lightMode = ThemeData(
     colorScheme: ColorScheme.light(
       surface: Colors.white,
-      primary: Colors.white,
-      secondary: Colors.white,
+      primary: Colors.black,
+      secondary: Colors.black,
       tertiary: Color.fromARGB(255, 180, 180, 180).withValues(alpha: 0.2),
     ),
   );

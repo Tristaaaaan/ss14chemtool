@@ -1,13 +1,12 @@
 import 'package:go_router/go_router.dart';
-
-import '../../features/home/presentation/screen/home_screen.dart';
+import 'package:ss14chemtool/features/buffers/presentation/screen/buffers_screen.dart';
 
 final GoRouter appRouter = GoRouter(
   routes: <RouteBase>[
     GoRoute(
       path: '/',
       builder: (context, state) {
-        return HomeScreen();
+        return BuffersScreen();
       },
     ),
   ],
