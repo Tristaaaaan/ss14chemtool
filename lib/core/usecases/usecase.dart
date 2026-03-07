@@ -22,3 +22,13 @@ class GetRecipeParams extends Equatable {
   @override
   List<Object?> get props => [unit, reagentId];
 }
+
+class GetReagentParams extends Equatable {
+  final int offset;
+  final String? searchQuery;
+
+  const GetReagentParams({required this.offset, this.searchQuery});
+
+  @override
+  List<Object?> get props => [offset, searchQuery];
+}

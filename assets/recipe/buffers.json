@@ -3,8 +3,8 @@
     { "id": "Iodine", "amount": 10 },
     { "id": "Hydrogen", "amount": 0.01 },
     { "id": "Mercury", "amount": 20 },
-    { "id": "Ammonia", "amount": 13.32 },
-    { "id": "Sugar", "amount": 70 },
-    { "id": "Carbon", "amount": 30 }
+    { "id": "Oxygen", "amount": 100 },
+    { "id": "Sugar", "amount": 100 },
+    { "id": "Carbon", "amount": 100 }
   ]
 }

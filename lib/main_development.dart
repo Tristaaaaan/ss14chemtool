@@ -4,6 +4,10 @@ import 'package:ss14chemtool/features/buffers/data/datasource/local/buffers_loca
 import 'package:ss14chemtool/features/buffers/data/repositories/buffer_repo_impl.dart';
 import 'package:ss14chemtool/features/buffers/domain/usecases/get_buffers.dart';
 import 'package:ss14chemtool/features/buffers/presentation/cubit/buffers_cubit.dart';
+import 'package:ss14chemtool/features/reagents/data/datasource/local/reagent_local_datasource.dart';
+import 'package:ss14chemtool/features/reagents/data/repositories/reagent_repo_impl.dart';
+import 'package:ss14chemtool/features/reagents/domain/usecases/get_reagents.dart';
+import 'package:ss14chemtool/features/reagents/presentation/cubit/reagent_cubit.dart';
 import 'package:ss14chemtool/shared/ui/molecules/cubit/sort_cubit.dart';
 import 'package:timeago/timeago.dart' as timeago;
 import 'package:window_manager/window_manager.dart';
@@ -41,6 +45,14 @@ void main() async {
               buffersLocalDatasource: BuffersLocalDatasourceImpl(),
             );
             return BuffersCubit(getBuffersUseCase: GetBuffers(repo));
+          },
+        ),
+        BlocProvider(
+          create: (_) {
+            final repo = ReagentRepoImpl(
+              reagentsLocalDatasource: ReagentsLocalDatasourceImpl(),
+            );
+            return ReagentCubit(getReagentUseCase: GetReagent(repo));
           },
         ),
       ],
