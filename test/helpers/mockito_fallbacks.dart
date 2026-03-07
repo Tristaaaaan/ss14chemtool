@@ -11,8 +11,8 @@ void registerMockitoFallbacks() {
     TaskEither<Failure, RecipeEntity>.right(
       RecipeEntity(
         method: '',
-        ingredients: IngredientEntity(id: '', amount: 0),
-        results: RecipeResultEntity(id: '', amount: 0),
+        ingredients: [IngredientEntity(id: '', amount: 0)],
+        results: [RecipeResultEntity(id: '', amount: 0)],
       ),
     ),
   );

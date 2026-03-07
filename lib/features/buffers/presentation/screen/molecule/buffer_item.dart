@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ss14chemtool/core/appdesign/design_tokens.dart';
-import 'package:ss14chemtool/shared/ui/atoms/regular_text.dart';
+
+import '../../../../../core/appdesign/design_tokens.dart';
+import '../../../../../shared/ui/atoms/regular_text.dart';
 
 class BufferItem extends StatelessWidget {
   final String name;

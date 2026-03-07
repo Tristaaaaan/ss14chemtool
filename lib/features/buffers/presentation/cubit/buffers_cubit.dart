@@ -1,6 +1,7 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/usecases/usecase.dart';
+import '../../domain/entities/buffer.dart';
 import '../../domain/usecases/get_buffers.dart';
 import 'buffers_state.dart';
 
@@ -28,6 +29,11 @@ class BuffersCubit extends Cubit<BuffersState> {
         items.isEmpty ? const BuffersState.empty() : BuffersState.loaded(items),
       ),
     );
+  }
+
+  Future<List<BufferEntity>> getBuffers() async {
+    final either = await getBuffersUseCase(NoParams()).run();
+    return either.fold((f) => [], (items) => items);
   }
 
   /// Refresh list

@@ -5,8 +5,8 @@ import 'result.dart';
 
 class RecipeEntity extends Equatable {
   final String method;
-  final IngredientEntity ingredients;
-  final RecipeResultEntity results;
+  final List<IngredientEntity> ingredients; // must be List
+  final List<RecipeResultEntity> results; // must be List
 
   const RecipeEntity({
     required this.method,

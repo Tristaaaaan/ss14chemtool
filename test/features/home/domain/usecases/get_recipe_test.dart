@@ -31,8 +31,8 @@ void main() {
   final result = RecipeResultEntity(id: '', amount: 100);
   final recipe = RecipeEntity(
     method: 'mix',
-    ingredients: ingredients,
-    results: result,
+    ingredients: [ingredients],
+    results: [result],
   );
 
   test('should get recipe from the repository', () async {

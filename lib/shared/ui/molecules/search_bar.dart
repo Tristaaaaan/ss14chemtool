@@ -77,7 +77,7 @@ class _RequestSearchBarState extends State<RequestSearchBar> {
               borderRadius: BorderRadius.circular(AppRadius.md5),
               borderSide: const BorderSide(color: Colors.white),
             ),
-            hintText: 'Search for chemicals',
+            hintText: 'How can I help you today?',
             hintStyle: TextStyle(
               color: Colors.white.withValues(alpha: hasText ? 1.0 : 0.5),
             ),
