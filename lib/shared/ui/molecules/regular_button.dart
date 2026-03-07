@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
-import 'package:ss14chemtool/core/appdesign/design_tokens.dart';
-import 'package:ss14chemtool/shared/ui/molecules/cubit/regular_button_cubit.dart';
+
+import '../../../core/appdesign/design_tokens.dart';
+import 'cubit/regular_button_cubit.dart';
 
 class RegularButton extends StatelessWidget {
   final bool? withIcon;

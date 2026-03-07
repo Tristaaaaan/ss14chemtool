@@ -2,7 +2,8 @@ import 'dart:convert';
 import 'dart:developer' as developer show log;
 
 import 'package:flutter/services.dart';
-import 'package:ss14chemtool/features/recipe/data/model/reagent_model.dart';
+
+import '../../../../recipe/data/model/reagent_model.dart';
 
 abstract class ReagentLocalDatasource {
   Future<List<Reagent>> getReagents(int offset, String? searchQuery);

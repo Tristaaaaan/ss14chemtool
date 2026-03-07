@@ -1,12 +1,12 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ss14chemtool/core/usecases/usecase.dart';
-import 'package:ss14chemtool/features/buffers/domain/entities/buffer.dart';
-import 'package:ss14chemtool/features/reagents/domain/usecases/get_reagents.dart';
-import 'package:ss14chemtool/features/recipe/domain/entities/ingredient.dart';
-import 'package:ss14chemtool/features/recipe/domain/entities/result.dart';
-import 'package:ss14chemtool/features/recipe/domain/usecases/formulate_recipe.dart';
 
+import '../../../../core/usecases/usecase.dart';
+import '../../../buffers/domain/entities/buffer.dart';
 import '../../../buffers/domain/usecases/get_buffers.dart';
+import '../../../reagents/domain/usecases/get_reagents.dart';
+import '../../domain/entities/ingredient.dart';
+import '../../domain/entities/result.dart';
+import '../../domain/usecases/formulate_recipe.dart';
 import 'formulate_recipe_state.dart';
 
 class FormulaRecipeCubit extends Cubit<FormulateRecipeState> {

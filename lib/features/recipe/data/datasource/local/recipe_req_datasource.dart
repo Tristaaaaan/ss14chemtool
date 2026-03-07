@@ -1,7 +1,7 @@
 import 'dart:developer' as developer;
 
-import 'package:ss14chemtool/core/usecases/usecase.dart';
-import 'package:ss14chemtool/features/recipe/data/model/recipe_req_model.dart';
+import '../../../../../core/usecases/usecase.dart';
+import '../../model/recipe_req_model.dart';
 
 abstract class RecipeRequirementsLocalDataSource {
   Future<List<RecipeRequirements>> formulateRecipeRequirements(

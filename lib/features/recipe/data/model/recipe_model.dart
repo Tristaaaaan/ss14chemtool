@@ -1,7 +1,8 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:ss14chemtool/features/recipe/data/model/ingredient_model.dart';
-import 'package:ss14chemtool/features/recipe/data/model/recipe_result_model.dart';
-import 'package:ss14chemtool/features/recipe/domain/entities/recipe.dart';
+
+import '../../domain/entities/recipe.dart';
+import 'ingredient_model.dart';
+import 'recipe_result_model.dart';
 
 part 'recipe_model.freezed.dart';
 part 'recipe_model.g.dart';

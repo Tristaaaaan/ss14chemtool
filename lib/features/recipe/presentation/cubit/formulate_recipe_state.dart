@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:ss14chemtool/features/recipe/domain/entities/recipe_requirements.dart';
+
+import '../../domain/entities/recipe_requirements.dart';
 
 part 'formulate_recipe_state.freezed.dart';
 

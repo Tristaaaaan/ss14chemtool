@@ -1,8 +1,8 @@
-import 'package:ss14chemtool/core/error/fp.dart';
-import 'package:ss14chemtool/core/usecases/usecase.dart';
-import 'package:ss14chemtool/features/reagents/data/datasource/local/reagent_local_datasource.dart';
-import 'package:ss14chemtool/features/reagents/domain/repositories/reagent_repository.dart';
-import 'package:ss14chemtool/features/recipe/domain/entities/reagent.dart';
+import '../../../../core/error/fp.dart';
+import '../../../../core/usecases/usecase.dart';
+import '../../../recipe/domain/entities/reagent.dart';
+import '../../domain/repositories/reagent_repository.dart';
+import '../datasource/local/reagent_local_datasource.dart';
 
 class ReagentRepoImpl implements ReagentRepository {
   final ReagentLocalDatasource reagentsLocalDatasource;

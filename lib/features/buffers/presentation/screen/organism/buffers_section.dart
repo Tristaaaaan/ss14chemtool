@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ss14chemtool/core/appdesign/design_tokens.dart';
-import 'package:ss14chemtool/features/buffers/presentation/screen/molecule/buffer_header.dart';
 
+import '../../../../../core/appdesign/design_tokens.dart';
 import '../../cubit/buffers_cubit.dart';
 import '../../cubit/buffers_state.dart';
+import '../molecule/buffer_header.dart';
 import '../molecule/buffer_item.dart';
 
 class BuffersSection extends StatefulWidget {

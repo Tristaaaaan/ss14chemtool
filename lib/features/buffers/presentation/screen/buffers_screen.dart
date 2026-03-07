@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:ss14chemtool/features/buffers/presentation/screen/organism/elements_section.dart';
 
 import 'organism/buffers_section.dart';
+import 'organism/elements_section.dart';
 
 class BuffersScreen extends StatelessWidget {
   const BuffersScreen({super.key});

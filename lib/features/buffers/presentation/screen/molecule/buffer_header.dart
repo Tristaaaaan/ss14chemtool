@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ss14chemtool/core/appdesign/design_tokens.dart';
-import 'package:ss14chemtool/shared/ui/atoms/regular_text.dart';
-import 'package:ss14chemtool/shared/ui/atoms/text_icon.dart';
+
+import '../../../../../core/appdesign/design_tokens.dart';
+import '../../../../../shared/ui/atoms/regular_text.dart';
+import '../../../../../shared/ui/atoms/text_icon.dart';
 
 class BufferHeader extends StatelessWidget {
   const BufferHeader({super.key});

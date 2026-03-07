@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:ss14chemtool/core/appdesign/design_tokens.dart';
-import 'package:ss14chemtool/core/utils/winrate_input_formatter_util.dart';
-import 'package:ss14chemtool/features/buffers/presentation/cubit/action_cubit.dart';
-import 'package:ss14chemtool/features/buffers/presentation/cubit/actions_state.dart';
-import 'package:ss14chemtool/features/reagents/presentation/cubit/reagent_cubit.dart';
-import 'package:ss14chemtool/features/reagents/presentation/cubit/reagent_state.dart';
-import 'package:ss14chemtool/shared/ui/atoms/regular_text.dart';
-import 'package:ss14chemtool/shared/ui/molecules/cubit/regular_button_cubit.dart';
-import 'package:ss14chemtool/shared/ui/molecules/regular_button.dart';
-import 'package:ss14chemtool/shared/ui/molecules/search_bar.dart';
 
+import '../../../../../core/appdesign/design_tokens.dart';
+import '../../../../../core/utils/winrate_input_formatter_util.dart';
+import '../../../../../shared/ui/atoms/regular_text.dart';
+import '../../../../../shared/ui/molecules/cubit/regular_button_cubit.dart';
 import '../../../../../shared/ui/molecules/form_textfield.dart';
+import '../../../../../shared/ui/molecules/regular_button.dart';
+import '../../../../../shared/ui/molecules/search_bar.dart';
+import '../../../../reagents/presentation/cubit/reagent_cubit.dart';
+import '../../../../reagents/presentation/cubit/reagent_state.dart';
 import '../../../../recipe/presentation/cubit/formula_recipe_cubit.dart';
+import '../../cubit/action_cubit.dart';
+import '../../cubit/actions_state.dart';
 
 class ElementsSection extends StatefulWidget {
   const ElementsSection({super.key});

@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:ss14chemtool/features/recipe/domain/entities/reagent.dart';
+
+import '../../../recipe/domain/entities/reagent.dart';
 
 part 'reagent_state.freezed.dart';
 

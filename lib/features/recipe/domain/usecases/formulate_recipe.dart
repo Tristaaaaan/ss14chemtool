@@ -1,8 +1,7 @@
-import 'package:ss14chemtool/core/error/fp.dart' show TaskEither;
-import 'package:ss14chemtool/core/usecases/usecase.dart';
-import 'package:ss14chemtool/features/recipe/domain/entities/recipe_requirements.dart';
-
 import '../../../../core/error/failure.dart';
+import '../../../../core/error/fp.dart' show TaskEither;
+import '../../../../core/usecases/usecase.dart';
+import '../entities/recipe_requirements.dart';
 import '../repositories/recipe_repository.dart';
 
 class FormulateRecipe
