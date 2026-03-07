@@ -9,6 +9,8 @@ import 'package:ss14chemtool/core/error/fp.dart' as _i3;
 import 'package:ss14chemtool/core/usecases/usecase.dart' as _i5;
 import 'package:ss14chemtool/features/recipe/domain/entities/recipe.dart'
     as _i4;
+import 'package:ss14chemtool/features/recipe/domain/entities/recipe_requirements.dart'
+    as _i7;
 import 'package:ss14chemtool/features/recipe/domain/repositories/recipe_repository.dart'
     as _i2;
 
@@ -49,4 +51,21 @@ class MockRecipeRepository extends _i1.Mock implements _i2.RecipeRepository {
                 ),
           )
           as _i3.TaskEither<_i3.Failure, _i4.RecipeEntity>);
+
+  @override
+  _i3.TaskEither<_i3.Failure, List<_i7.RequirementEntity>> formulateRecipe(
+    _i5.FormulateRecipeParams? params,
+  ) =>
+      (super.noSuchMethod(
+            Invocation.method(#formulateRecipe, [params]),
+            returnValue: _i6
+                .dummyValue<
+                  _i3.TaskEither<_i3.Failure, List<_i7.RequirementEntity>>
+                >(this, Invocation.method(#formulateRecipe, [params])),
+            returnValueForMissingStub: _i6
+                .dummyValue<
+                  _i3.TaskEither<_i3.Failure, List<_i7.RequirementEntity>>
+                >(this, Invocation.method(#formulateRecipe, [params])),
+          )
+          as _i3.TaskEither<_i3.Failure, List<_i7.RequirementEntity>>);
 }

@@ -19,4 +19,11 @@ class ReagentRepoImpl implements ReagentRepository {
     );
     return models.map((m) => m.toEntity()).toList();
   }, (e, _) => CacheFailure(e.toString()));
+
+  @override
+  TaskEither<Failure, ReagentEntity> getReagentById(String id) =>
+      TaskEither.tryCatch(() async {
+        final model = await reagentsLocalDatasource.getReagentById(id);
+        return model!.toEntity();
+      }, (e, _) => CacheFailure(e.toString()));
 }

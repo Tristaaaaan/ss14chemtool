@@ -1,3 +1,5 @@
+import 'dart:developer' as developer;
+
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:ss14chemtool/core/usecases/usecase.dart';
 import 'package:ss14chemtool/features/reagents/domain/usecases/get_reagents.dart';
@@ -7,8 +9,11 @@ import 'reagent_state.dart';
 
 class ReagentCubit extends Cubit<ReagentState> {
   final GetReagent getReagentUseCase;
-  ReagentCubit({required this.getReagentUseCase})
-    : super(const ReagentState.initial()) {
+  final GetReagentById getReagentByIdUseCase;
+  ReagentCubit({
+    required this.getReagentUseCase,
+    required this.getReagentByIdUseCase,
+  }) : super(const ReagentState.initial()) {
     fetchInitial();
   }
 
@@ -42,9 +47,14 @@ class ReagentCubit extends Cubit<ReagentState> {
     _offset = 0;
     _items.clear();
     _hasMore = true;
-
+    developer.log('Search query: $query');
     emit(const ReagentState.loading());
     await _load();
+  }
+
+  Future<ReagentEntity?> getReagentById(String id) async {
+    final either = await getReagentByIdUseCase(id).run();
+    return either.fold((l) => null, (r) => r);
   }
 
   /// 🔹 LOAD MORE (Pagination)

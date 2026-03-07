@@ -13,3 +13,13 @@ class GetReagent implements UseCase<List<ReagentEntity>, GetReagentParams> {
   TaskEither<Failure, List<ReagentEntity>> call(GetReagentParams params) =>
       reagentRepository.getReagents(params);
 }
+
+class GetReagentById implements UseCase<ReagentEntity, String> {
+  final ReagentRepository reagentRepository;
+
+  GetReagentById(this.reagentRepository);
+
+  @override
+  TaskEither<Failure, ReagentEntity> call(String id) =>
+      reagentRepository.getReagentById(id);
+}
